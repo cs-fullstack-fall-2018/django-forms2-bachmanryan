@@ -2,8 +2,9 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'forms_app/bootstrap.css' %}">
 <div class="jumbotron">
-	<p>This is the forms app</p>
+	<h1>Memphis Recipes</h1>
 </div>
+<a href="{% url 'post_new' %}"><span class="glyphicon glyphicon-plus"></span></a>
 	{% if form_list %}
 		<ul>
 			{% for eachItem in form_list %}
